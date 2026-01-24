@@ -38,6 +38,15 @@
             background-repeat: no-repeat;
             z-index: -2;
             background-color: #444;
+
+            @media (max-width: 768px) {
+                .bg-fixed-layer {
+                    /* 将这里的路径替换为你为手机准备的竖屏壁纸 */
+                    background-image: url('assets/background-mobile.png'); 
+                    /* 针对手机端微调对齐*/
+                    background-position: center top; 
+                }
+            }
         }
 
         /* 遮罩层 */
